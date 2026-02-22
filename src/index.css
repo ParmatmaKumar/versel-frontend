@@ -1,0 +1,77 @@
+@import "tailwindcss";
+html, body {
+    
+    overflow-x: hidden;
+
+}
+
+.homepage_bg {
+    background-image: url("../src/assets/Images/bghome.svg");
+}
+
+.loader{
+      font-size: 48px;
+      color: #FFF;
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      position: relative;
+    }
+    .loader:after{
+      content: 'Loading';
+      position: relative;
+      z-index: 5;
+    }
+    .loader:before{
+      content: '';
+      height: 6px;
+      border: 1px solid;
+      border-radius: 10px;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      background: linear-gradient(#FF3D00 100%, transparent 0) no-repeat;
+      background-size: 0% auto;
+      animation: 10s lineGrow linear infinite;
+    }
+
+    @keyframes lineGrow {to {  background-size: 100% auto}}
+
+
+.spiner {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin:25% auto ;
+  position: relative;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: -38px -12px ,  -14px 0,  14px 0, 38px 0;
+  }
+  33% {
+    box-shadow: -38px 0px, -14px -12px,  14px 0, 38px 0;
+  }
+  66% {
+    box-shadow: -38px 0px , -14px 0, 14px -12px, 38px 0;
+  }
+  100% {
+    box-shadow: -38px 0 , -14px 0, 14px 0 , 38px -12px;
+  }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+ 
