@@ -2,7 +2,7 @@ import React, { useCallback } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import IconBtn from "../../../common/IconBtn"
-import { buyCourse } from "../../../../services/operations/studentFeaturesAPI"
+import { buyCourse } from "../../../../services/operations/studentFeaturesApi"
 import { ACCOUNT_TYPE } from "../../../../utils/constants"
 
 const RenderTotalAmount = () => {
