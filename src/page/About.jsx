@@ -6,7 +6,7 @@ import BannerImage3 from "../assets/Images/aboutus3.webp"
 import Quote from '../components/core/AboutPage/Quote';
 import FoundingStory from '../assets/Images/FoundingStory.png';
 import StatsComponent from '../components/core/AboutPage/Stats';
-import LearningGrid from '../components/core/AboutPage/learningGrid';
+import LearningGrid from "../components/core/AboutPage/LearningGrid";
 import ContactFormSection from '../components/core/AboutPage/ContactFormSection';   
 import Footer from '../components/common/Footer';
 
